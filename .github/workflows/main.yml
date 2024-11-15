@@ -1,4 +1,14 @@
+name: ci
 
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+name: the name of this workflo
 jobs:
   build:
     runs-on: ubuntu-latest
