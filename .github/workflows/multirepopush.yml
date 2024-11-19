@@ -23,8 +23,8 @@ jobs:
         uses: quay/login-action@v3
         with:
           registry: quay.io
-          username: ${{ quay_user }}
-          password: ${{ quay_token }}
+          username: ${{ vars.quay_user }}
+          password: ${{ secrets.quay_token }}
       
       - name: Build and push
         uses: docker/build-push-action@v6
