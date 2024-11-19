@@ -4,7 +4,7 @@ on:
 jobs:
   docker:
     runs-on: self-hosted
-    labels: kucl22
+    label: kucl22
     steps:
       -
         name: Set up QEMU test
